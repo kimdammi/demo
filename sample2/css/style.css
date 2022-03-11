@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*기본 설정*/
+/*페이지 전체 사이트*/
+/*경계값포함해서 계산되도록*/
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 980px;
+    height: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Karma', serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+div {
+    display: block;
+}
+
+/*Float 처리 클래스*/
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearfix:after{content: ''; display: block; clear: both; float: none;}
+
+.center{
+    text-align: center;
+}
+
+.padding-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.padding-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.padding-rl{
+    padding: 0 8px;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    vertical-align: middle;
+    width: 100%;
+}
+/*상단 바 영역*/
+.top-bar{
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*gellery 영역*/
+
+.gallery>div>div{
+    width: 25%;
+}
+
+h3{
+    font-size: 24px;
+}
+
+/*중단 바 영역*/
+.middle-bar{
+    display: inline-block;
+    width: auto;
+}
+
+.middle-bar-item{
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+.middle-bar-item:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.middle-bar-item:nth-child(2){
+    color: #fff;
+    background-color: #000;
+}
+
+.middle-bar-item:nth-child(2):hover{
+    color: #000;
+    background-color: #eee;
+}
+
+/* 하단 사진,설명 영역 */
+.container{
+    padding: 0.01em 16px;
+}
+
+.container img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container>div>h4{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.container>div>h6{
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* 하단 바 영역 */
+.bottom-item{
+    width: 33%;
+    float: left;
+}
+
+.bottom-item a{
+    text-decoration: underline;
+}
+
+ul img{
+    width: 50px;
+    margin-right: 16px;
+}
+
+.bottom-item .large-p{
+    font-size: 20px;
+}
+
+.tag{
+    margin-bottom: 16px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-family: serif;
+    color: #fff;
+    background-color: #9e9e9e;
+}
+
+.tag-black{
+    margin-bottom: 16px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-family: serif;
+    color: #fff;
+    background-color: #000;
+}
+

@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*기본 설정*/
+/*페이지 전체 사이트*/
+/*경계값포함해서 계산되도록*/
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 1200px;
+    height: 100%;
+    padding: 0;
+    margin:0 auto;
+    line-height: 1.5;
+    font-size: 13px;
+    font-family: 'Nanum Gothic','나눔고딕', sans-serif;
+    letter-spacing: -.05em;
+    color: #483834;
+}
+
+/*Float 처리 클래스*/
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearfix:after{content: ''; display: block; clear: both; float: none;}
+
+div {
+    display: block;
+}
+
+.center{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+/* 상단 영역 */
+.header{
+    min-width: 1200px;
+    min-height: 175px;
+    border-top: 3px solid #ff7c98;
+    border-bottom: 1px solid #3f291a;
+    background: url('../img/bg_header.gif') 50% 0 repeat-x;
+    vertical-align: middle;
+}
+
+/*로고 부분*/
+.top-logo{
+    border-bottom: 1px solid #e2d9d6;
+    position: relative;
+    width: 1200px;
+    height: 125px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.top-logo .logo{
+    width: 92px;
+    height: 92px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/logo_baskinrobbins.png") no-repeat;
+    text-indent: -10000em;
+}
+
+/*sns 부분*/
+.sns{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.sns>div>div{
+    float: left;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+/*상단 etc 영역*/
+.top-etc{
+    position: absolute;
+    top: 39px;
+    right: 0;
+    height: 54px;
+    vertical-align: middle;
+    line-height: 54px;
+}
+
+.top-etc div div{
+    float: right;
+    color: #4a3d39;
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+.top-etc div a{
+    color: #4a3d39;
+    font-size: 11px;
+}
+
+.top-etc div img{
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+}
+
+/* 상단 바 영역*/
+.menu{
+    width: 1200px;
+    margin: 0 auto;
+    padding: auto;
+    float: left;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    padding: 0 23px;
+}
+
+.menu span {
+    position: relative;
+    display: block;
+    height: 46px;
+    background: url('../img/gnb_menu.png') no-repeat;
+    text-indent: -10000px;
+    margin: auto;
+}
+.menu a{
+    padding: 0 23px;
+    left: 50%;
+}
+
+.padding-menu{
+    display: block;
+    padding: 0 59px;
+}
+
+.header .menu .login a span{
+    width: 35px;
+    background-position: 0px -1px;
+}
+
+.header .menu .join a span{
+    width: 35px;
+    background-position: -97px -1px;;
+}
+
+.header .menu .flaver a span{
+    width: 164px;
+    background-position: -133px -3px;
+}
+
+.header .menu .menu-m a span{
+    width: 42px;
+    background-position: -415px -3px;
+}
+
+.header .menu .nut a span{
+    width: 105px;
+    background-position: -545px -3px;
+}
+
+.header .menu .menu-event a span{
+    width: 42px;
+    background-position: -737px -3px;
+}
+
+.header .menu .store a span{
+    width: 49px;
+    background-position: -897px -3px;
+}
+
+.header .menu .about a span{
+    width: 49px;
+    background-position: -1057px -3px;
+}
+
+/* 본문 광고 영역 */
+.middle{
+    width: 100%;
+    height: 850px;
+}
+
+/* 이달의 맛 영역 */
+.middle .flavor_month{
+    display: block;
+    height: 150px;
+    margin-bottom: 3px;
+    background: url('../img/img_flaovr_month_top.png') 50% 0 no-repeat;
+}
+
+/* 광고 영역 */
+.middle .banner_month{
+    display: block;
+    height: 700px;
+    background: url('../img/img_main_banner_1.jpg') 50% 0 no-repeat;
+    text-indent: -10000em;
+}
+
+/* 이벤트 영역 */
+.event{
+    display: block;
+    width: 100%;
+    height: 720px;
+}
+
+.event>span{
+    display: block;
+    padding: 100px 0 50px;
+    color: #2f231c;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.event .event-g{
+    width: 100%;
+}
+
+.event-g div{
+    width: 24%;
+    float: left;
+}
+
+.event-g div img{
+    width: 286px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+}
+
+
+.event-g div p{
+    margin: 22px 0 8px 0;
+    color: #2f231c;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+

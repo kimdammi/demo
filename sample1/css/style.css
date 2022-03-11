@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+/*기본 설정*/
+/*페이지 전체 사이트*/
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+    color:#777;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*Float 처리 클래스*/
+.pull-left{float: left;}
+.pull-right{float: right;}
+.clearfix:after{content: ''; display: block; clear: both; float: none;}
+
+#top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*상단 배경이미지*/
+.bg-img01{
+    background:url("../img/parallax1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    background-position: center center;
+    /* opacity: 0.5; 배경만되게하기*/
+}
+
+/*상단 로고*/
+.top-logo{
+    margin: 0px auto;
+    width: 40%;
+    height: 100%;
+    display: table;
+}
+
+.top-logo span{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.top-logo span p{
+    width: auto;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #222;
+    opacity: 0.8;
+    text-align: center;
+}
+
+
+/*상단 메뉴 바*/
+.top-bar-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    /*background-color:inherit; */
+    text-align:center;
+    white-space:nowrap
+}
+
+.top-bar a{
+    font-size: 13px;
+    color:#777;
+}
+
+.top-bar a:hover{
+    color:#222;
+    background-color: #ccc;
+}
+
+.top-bar a:last-child:hover{
+    color:white;
+    background-color: red;
+}
+
+/*본문 영역*/
+.content{
+    width: 980px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .center{
+    text-align:center;
+}
+
+.ita{
+    font-style: italic;
+}
+
+.content p{
+    display: block;
+    text-align:left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.content-myname{
+    display: block;
+    width: 45%;
+    padding: 12px 24px;
+}
+.content-img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    vertical-align: middle;
+    opacity: 0.60;
+}
+
+.content-img:hover{
+    opacity: 1;
+}
+
+/*중간 바 영역*/
+.middle-bar{
+    color: #fff!important;
+    background-color: #616161!important;
+    padding: 16px 0;
+}
+
+.middle-bar div{
+    text-align: center;
+    display: block;
+    width: 24%;
+    float: left;
+}
+
+.middle-bar div span{
+    font-size: 20px;
+}
+
+/*중단 배경이미지*/
+.bg-img02{
+    position: relative;
+    background:url("../img/parallax2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    background-position: center center;
+    /* opacity: 0.75; 배경만되게하기*/
+}
+
+/*중단 이미지 로고*/
+.middle-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: table;
+}
+
+.middle-logo span p{
+    width: auto;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    padding: 12px 24px;
+    color: #fff; 
+}
+
+/*갤러리 부분*/
+.gallery{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.gallery p{
+    padding: 15px;
+}
+
+.gallery img{
+    float: left;
+    width: 23%;
+    padding: 0 5px;
+}
+
+.gallery img:hover{
+    opacity: 0.5;
+}
+
+/*버튼 부분*/
+.gallery button{
+    margin-top: 50px;
+    padding: 12px 24px;
+    color: #000;
+    background-color: #eee;
+    border: none;
+}
+
+.gallery button:hover{
+    background-color: #ccc;
+}
+
+
+/*하단 영역*/
+.bg-img03{
+    position: relative;
+    background:url("../img/parallax3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    background-position: center center;
+    /* opacity: 0.75; 배경만되게하기*/
+}
+
+/*where i work영역*/
+.bottom{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.bottom img{
+    width: 35%;
+    height: auto;
+    border-radius: 4px;
+    vertical-align: middle;
+    float: left;
+}
+
+.feedback>div{
+    width: 60%;
+    padding: 10px;
+    float: left;
+    text-align: left;
+}
+
+.feedback input{
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.feedback button{
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin: 15px;
+    border: none;
+    padding:8px 16px;
+}
+
+.feedback button:hover{
+    color: #000;
+    background-color: #777;
+    float: right;
+    margin: 15px;
+    border: none;
+    padding:8px 16px;
+}
+
+.footer{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+.footer a{
+    color: #000;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 16px;
+}
+
+.footer a:hover{
+    color: #000;
+    background-color: #777;
+}
+
+
+.footer .under{
+    text-decoration: underline
+}
